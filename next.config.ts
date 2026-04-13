@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next'
+import createMDX from '@next/mdx'
 
 const securityHeaders = [
   {
@@ -54,6 +55,7 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  pageExtensions: ['ts', 'tsx', 'mdx'],
 
   async headers() {
     return [
@@ -73,4 +75,11 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 }
 
-export default nextConfig
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
+})
+
+export default withMDX(nextConfig)

@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { MDXRemote } from 'next-mdx-remote/rsc'
 import { getPostBySlug, getPostSlugs } from '@/lib/mdx'
 import { siteConfig } from '@/lib/metadata'
 import Badge from '@/components/ui/Badge'
@@ -53,6 +52,14 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const readingTime = estimateReadingTime(post.content)
 
+  let MdxContent: React.ComponentType
+  try {
+    const mod = await import(`@/content/blog/${slug}.mdx`)
+    MdxContent = mod.default
+  } catch {
+    notFound()
+  }
+
   return (
     <div className="min-h-screen pt-28 pb-24 px-4 sm:px-6">
       <article className="max-w-3xl mx-auto">
@@ -87,7 +94,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <hr className="border-zinc-800 mb-12" />
 
         <div className="prose prose-invert prose-zinc prose-emerald max-w-none prose-headings:font-semibold prose-headings:text-zinc-100 prose-p:text-zinc-400 prose-p:leading-relaxed prose-li:text-zinc-400 prose-strong:text-zinc-200 prose-a:text-emerald-400 prose-a:no-underline hover:prose-a:underline prose-code:text-emerald-300 prose-code:bg-zinc-900 prose-code:px-1 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-pre:bg-zinc-900 prose-pre:border prose-pre:border-zinc-800 prose-blockquote:border-emerald-500 prose-blockquote:text-zinc-400">
-          <MDXRemote source={post.content} />
+          <MdxContent />
         </div>
 
         <hr className="border-zinc-800 mt-16 mb-10" />
