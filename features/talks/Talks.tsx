@@ -13,9 +13,18 @@ interface Talk {
 
 const talks: Talk[] = [
   {
-    title: 'Zero Trust with KeycloakL: Securely Integrating IAM into Microservice Architectures',
+    title:
+      'Zero Trust with Keycloak: How to Securely Integrate IAM into Microservices Architectures',
+    event: 'Meetup Munich',
+    date: '2026',
+    description:
+      'This talk walks through how to implement Zero Trust principles in real microservices architectures using Keycloak, SPIFFE/SPIRE, and mTLS, covering everything from replacing static API keys to workload identity and end-to-end secure service communication with JWT and X.509 SVIDs. No theory, no marketing language, just concrete architecture decisions, real code, and the mistakes that actually happen in production.',
+    tags: ['Zero Trust', 'Keycloak', 'IAM', 'Microservices'],
+  },
+  {
+    title: 'Zero Trust with Keycloak: Securely Integrating IAM into Microservice Architectures',
     event: 'heise devSec',
-    date: '2024',
+    date: '2025',
     description:
       'Article on securely integrating Identity & Access Management into microservice architectures using Keycloak as the central IAM component within a Zero Trust model.',
     tags: ['Zero Trust', 'Keycloak', 'IAM', 'Microservices'],
@@ -54,7 +63,7 @@ const talks: Talk[] = [
   },
   {
     title: 'DevSecOps - Securing Your Web App in Three Simple Steps',
-    event: 'Meetup',
+    event: 'Meetup Munich',
     date: '2022',
     description:
       'Practical meetup talk on incrementally embedding security practices into everyday development: from a first SAST scan to a fully integrated DevSecOps pipeline.',
