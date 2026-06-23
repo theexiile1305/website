@@ -7,3 +7,5 @@ ignoredBuiltDependencies:
 
 overrides:
   postcss: '>=8.5.10'
+  '@babel/core': '>=7.29.6'
+  'js-yaml': '>=4.2.0'
