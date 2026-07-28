@@ -8,6 +8,6 @@ ignoredBuiltDependencies:
 overrides:
   'postcss': '>=8.5.18'
   '@babel/core': '>=7.29.6'
-  'js-yaml': '>=4.2.0'
+  '@eslint/eslintrc>js-yaml': '>=4.2.0'
   'gray-matter': '>=3.14.1'
   'sharp': '>=0.35.0'
