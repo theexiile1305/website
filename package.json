@@ -18,10 +18,10 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@next/mdx": "16.2.3",
+    "@next/mdx": "16.2.12",
     "framer-motion": "12.7.4",
     "gray-matter": "4.0.3",
-    "next": "16.2.11",
+    "next": "16.2.12",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -33,7 +33,7 @@
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "eslint": "9.39.4",
-    "eslint-config-next": "16.2.3",
+    "eslint-config-next": "16.2.12",
     "eslint-plugin-security": "3.0.1",
     "prettier": "3.5.3",
     "tailwindcss": "4.2.2",
