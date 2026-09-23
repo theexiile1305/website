@@ -13,6 +13,14 @@ interface Talk {
 
 const talks: Talk[] = [
   {
+    title: 'From XZ to Trivy: What Supply Chain Attacks Reveal About Our Pipelines',
+    event: 'heise devSec',
+    date: '2026',
+    description:
+      'Lessons from XZ Utils, polyfill.io, Shai-Hulud, and Trivy on how trust in maintainers, domains, version tags, and security scanners exposes software supply chains. A practical account of what worked, what failed, and how teams can assess pipeline weaknesses and prioritize their first security improvements.',
+    tags: ['Supply Chain Security', 'CI/CD', 'DevSecOps'],
+  },
+  {
     title:
       'Zero Trust with Keycloak: How to Securely Integrate IAM into Microservices Architectures',
     event: 'Meetup Munich',
