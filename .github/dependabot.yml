@@ -1,20 +1,20 @@
 version: 2
 
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "cron"
-      cronjob: "0 4 * * *"
-      timezone: "Europe/Berlin"
+      interval: 'cron'
+      cronjob: '0 4 * * *'
+      timezone: 'Europe/Berlin'
     cooldown:
       default-days: 1
 
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "cron"
-      cronjob: "0 4 * * *"
-      timezone: "Europe/Berlin"
+      interval: 'cron'
+      cronjob: '0 4 * * *'
+      timezone: 'Europe/Berlin'
     cooldown:
       default-days: 1
