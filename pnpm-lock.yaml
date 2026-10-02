@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@next/mdx':
-        specifier: 16.3.7
-        version: 16.3.7
+        specifier: 16.3.8
+        version: 16.3.8
       framer-motion:
         specifier: 13.4.6
         version: 13.4.6(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
@@ -404,8 +404,8 @@ packages:
   '@next/eslint-plugin-next@16.3.7':
     resolution: {integrity: sha512-ZQwUKBxqKAasarxLHJkkIv0cuG80pJ7TKvCUcFvlKewkuzYkL+Lsxb++DQlcBnY4uT0kOazDye4j1pyDPlDcDQ==}
 
-  '@next/mdx@16.3.7':
-    resolution: {integrity: sha512-zC5zJH6TZk7W/1phchePqPxPPHaeRBMtwQNYjrPWbEHo8FwFCskQX+XXejDKey6zuqIKVw8fh2WGmIu/hPCPoA==}
+  '@next/mdx@16.3.8':
+    resolution: {integrity: sha512-9Es7/Mf5cDo7dL3NEUQerl98SrwWo0QeBguKC06rX/PydHXKxgHIuXjDuxvu56oO4Yty4hn3FPIbXEOx39oQDw==}
     peerDependencies:
       '@mdx-js/loader': '>=0.15.0'
       '@mdx-js/react': '>=0.15.0'
@@ -2453,7 +2453,7 @@ snapshots:
     transitivePeerDependencies:
       - eslint
 
-  '@next/mdx@16.3.7':
+  '@next/mdx@16.3.8':
     dependencies:
       source-map: 0.7.6
 
