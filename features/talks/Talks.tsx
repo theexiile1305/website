@@ -13,12 +13,26 @@ interface Talk {
 
 const talks: Talk[] = [
   {
+    title: 'The Trust Trap – Security of Coding Agents',
+    event: 'Graz Connects 2026: AI Assisted Design & Engineering of Digital Solutions & Systems',
+    date: '2026',
+    description:
+      'How coding assistants such as GitHub Copilot, Cursor, and Claude affect software security: from vulnerabilities in generated code to slopsquatting, model poisoning, and rules file backdoors. The talk closes with recommendations for secure configuration, usage guidelines, and review practices.',
+    tags: ['GenAI Security', 'Coding Agents', 'Slopsquatting', 'Supply Chain Security'],
+  },
+  {
     title: 'The Trust Trap: Security of Coding Agents',
     event: 'Coding Festival meets Platform Engineering @ DATEV',
     date: '2026',
     description:
       'A practical look at the trust boundaries of AI coding agents, from insecure generated code and prompt injection to hallucinated dependencies and tool permissions. Demonstrations show why passing tests are not enough and how scoped authority, dependency review, and independent security checks help teams keep control of agent-assisted development.',
-    tags: ['AI Security', 'Coding Agents', 'Prompt Injection', 'Supply Chain Security'],
+    tags: [
+      'GenAI Security',
+      'AI Security',
+      'Coding Agents',
+      'Prompt Injection',
+      'Supply Chain Security',
+    ],
   },
   {
     title: 'From XZ to Trivy: What Supply Chain Attacks Reveal About Our Pipelines',

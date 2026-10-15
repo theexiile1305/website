@@ -15,6 +15,8 @@ export const siteConfig = {
   keywords: [
     'Software Security Engineer',
     'DevSecOps',
+    'GenAI Security',
+    'Supply Chain Security',
     'Zero Trust',
     'Cloud Security',
     'Kubernetes',

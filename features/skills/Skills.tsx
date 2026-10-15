@@ -29,6 +29,39 @@ const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    title: 'GenAI Security',
+    description:
+      'Securing AI coding agents and LLM-powered workflows: trust boundaries, prompt injection, tool permissions, and safe review practices.',
+    icon: '🤖',
+    variant: 'security',
+    skills: [
+      'Prompt Injection',
+      'Coding Agents',
+      'Agent Permissions',
+      'Rules File Backdoors',
+      'Slopsquatting',
+      'Model Poisoning',
+      'MCP Security',
+      'AI Code Review',
+    ],
+  },
+  {
+    title: 'Supply-Chain-Security',
+    description:
+      'Protecting the path from dependency to deployment: provenance, signed artifacts, SBOMs, and hardened build pipelines.',
+    icon: '🔗',
+    variant: 'devops',
+    skills: [
+      'SBOM',
+      'Cosign',
+      'SLSA',
+      'Trivy',
+      'Dependency Review',
+      'Artifact Signing',
+      'Provenance',
+    ],
+  },
+  {
     title: 'Cloud & Infrastructure',
     description: 'Kubernetes-native security, cloud hardening, IaC, observability.',
     icon: '☁️',
@@ -50,17 +83,7 @@ const skillCategories: SkillCategory[] = [
     description: 'Shift-left security, CI/CD hardening, policy-as-code.',
     icon: '⚙️',
     variant: 'devops',
-    skills: [
-      'GitHub Actions',
-      'Trivy',
-      'Snyk',
-      'Cosign',
-      'SBOM',
-      'Supply Chain Security',
-      'Policy as Code',
-      'GitOps',
-      'ArgoCD',
-    ],
+    skills: ['GitHub Actions', 'CI/CD Hardening', 'Snyk', 'Policy as Code', 'GitOps', 'ArgoCD'],
   },
   {
     title: 'Architecture',
