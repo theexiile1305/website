@@ -12,16 +12,36 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Security Architecture Reviews',
+    description:
+      'Several security architecture reviews for clients under NDA: medical devices with high patient-safety impact, IoT devices together with their cloud backends, and the validation of an API and access concept for the identity provider of a public hyperscaler.',
+    tech: [
+      'Threat Modeling',
+      'STRIDE',
+      'MITRE ATT&CK',
+      'IoT',
+      'Cloud Security',
+      'IAM',
+      'OAuth2/OIDC',
+      'API Security',
+    ],
+    highlights: [
+      'Medical device threat modeling with STRIDE & MITRE ATT&CK',
+      'End-to-end review of IoT devices and their cloud',
+      'Validation of API & access concept for a hyperscaler IdP',
+    ],
+  },
+  {
     title: 'Stock distribution at international e-commerce platform',
     description:
-      'Development and operation of different applications for advertising campaign and stock data management across an international e-commerce build on GCP and StackIT.',
+      'Development and operation of several applications for advertising campaign and stock data management on an international e-commerce platform built on GCP and a sovereign European cloud, for a client under NDA.',
     tech: [
       'Kotlin',
       'Java',
       'Spring Boot',
       'Ktor',
       'GCP',
-      'StackIT',
+      'Sovereign Cloud',
       'Terraform',
       'Angular',
       'Vue',
@@ -74,6 +94,18 @@ const projects: Project[] = [
       'Zero Trust evaluation framework',
       'PoC secure software architectures',
       'Scientific publications & conference talks',
+    ],
+  },
+  {
+    title: 'Zwischenzeit',
+    description:
+      'Unofficial native iPhone, iPad & Apple Watch calendar for therapists using the TTools practice software. Shows the practice day at a glance between two patients, with check-in status, prescription progress and treatment documentation. Privacy-first, since it handles real patient health data.',
+    tech: ['Swift 6', 'SwiftUI', 'watchOS', 'WidgetKit', 'Swift Testing', 'GitHub Actions'],
+    github: 'https://github.com/theexiile1305/zwischenzeit',
+    highlights: [
+      'Threat model, Face ID lock & no on-device persistence',
+      'Watch app & complication without credentials',
+      'Zero third-party dependencies, CodeQL & OpenSSF Scorecard',
     ],
   },
   {
