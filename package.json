@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@next/mdx": "16.4.3",
-    "framer-motion": "14.7.1",
+    "framer-motion": "14.8.0",
     "gray-matter": "4.0.3",
     "next": "16.4.3",
     "react": "19.3.1",
