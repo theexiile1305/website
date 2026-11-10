@@ -13,6 +13,14 @@ interface Talk {
 
 const talks: Talk[] = [
   {
+    title: 'Your Perimeter Is Already Dead: Zero Trust with Keycloak and SPIFFE',
+    event: 'BSides Munich 2026',
+    date: '2026',
+    description:
+      'Running Keycloak or terminating mTLS at the ingress does not make an architecture Zero Trust. Based on production failures, the talk walks through a Kubernetes setup with SPIFFE/SPIRE workload identity, short-lived tokens scoped per service pair, local JWT validation, and OPA-based authorization, and closes with common pitfalls such as missing audience validation and JWKS caches that do not refresh on 401.',
+    tags: ['Zero Trust', 'Keycloak', 'SPIFFE/SPIRE', 'Workload Identity', 'Kubernetes'],
+  },
+  {
     title: 'The Trust Trap – Security of Coding Agents',
     event: 'Graz Connects 2026: AI Assisted Design & Engineering of Digital Solutions & Systems',
     date: '2026',
